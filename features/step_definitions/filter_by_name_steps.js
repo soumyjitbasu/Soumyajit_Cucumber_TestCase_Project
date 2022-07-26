@@ -7,7 +7,6 @@ Given ('I open the website', async function(){
 
 });
 
-// SCENARIO 1 - VALID SEARCH
 When ('I enter the computer name {string}', async function(computer_name){
 
     let input = Selector('input#searchbox').with({boundTestRun:testController});
@@ -30,7 +29,6 @@ Then ('one result is retuened with name Acer Iconia', async function(){
 });
 
 
-// SCENARIO 2 - INVALID SEARCH [RETURN NO RESULT]
 When ('enter an invalid computer name {string}', async function(invalid_computer_name){
 
     let input = Selector('input#searchbox').with({boundTestRun:testController});
@@ -53,7 +51,6 @@ Then ('no result should be retruned', async function(){
 
 
 
-// SCENARIO 3 - ADD A COMPUTER [HAPPY FLOW]
 When ('user clicks add new computer button', async function() {
 
     let add = Selector('a#add').with({boundTestRun:testController});
@@ -105,7 +102,6 @@ Then ('successful computer creation', async function(){
 
 
 
-// SCENARIO 4 - SCENARIO 4 - ADD A COMPUTER WITH SPECIAL CHARACTERS
 When ('user clicks add new computer', async function() {
 
     let add = Selector('a#add').with({boundTestRun:testController});
@@ -155,7 +151,6 @@ Then ('successful computer creation with blank name', async function(){
     await testController.expect(successmessage.innerText).contains('Done!');
 });
 
-// SCENARIO 5 - ADD COMPUTER MANDATORY FILED VALIDATION
 When ('go back to add computer page', async function() {
 
     let add = Selector('a#add').with({boundTestRun:testController});
