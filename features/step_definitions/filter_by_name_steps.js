@@ -104,7 +104,58 @@ Then ('successful computer creation', async function(){
 });
 
 
-// SCENARIO 4 - ADD COMPUTER MANDATORY FILED VALIDATION
+
+// SCENARIO 4 - SCENARIO 4 - ADD A COMPUTER WITH SPECIAL CHARACTERS
+When ('user clicks add new computer', async function() {
+
+    let add = Selector('a#add').with({boundTestRun:testController});
+    await testController
+    .click(add);
+});
+
+When ('enter all special characters in computer name {string}', async function(computer_name_valid){
+    let computer_name = Selector('input#name').with({boundTestRun: testController});
+    await testController
+    .typeText(computer_name, computer_name_valid)
+});
+
+When ('enter Introduced Valid Date {string}', async function(introduced_date){
+    let intro_date = Selector('input#introduced').with({boundTestRun: testController});
+    await testController
+    .typeText(intro_date, introduced_date)
+});
+
+When ('enter Discontinued Valid Date {string}', async function(discontinued_date){
+    let disc_date = Selector('input#discontinued').with({boundTestRun: testController});
+    await testController
+    .typeText(disc_date, discontinued_date)
+});
+
+When ('choose valid company', async function(){
+    let company = Selector('select#company').with({boundTestRun: testController});
+    let company_option = company.find('option');
+    await testController
+    .click(company)
+    .click(company_option.withText('RCA'))
+});
+
+When ('create the computer with blank name', async function() {
+
+    await testController
+    .pressKey("tab");
+    await testController
+    .wait(2000);
+    await testController
+    .pressKey("enter");
+ 
+});
+
+Then ('successful computer creation with blank name', async function(){
+    let successmessage = Selector('div').child('strong').with({boundTestRun: testController})
+    await testController.expect(successmessage.innerText).contains('Done!');
+});
+
+// SCENARIO 5 - ADD COMPUTER MANDATORY FILED VALIDATION
 When ('go back to add computer page', async function() {
 
     let add = Selector('a#add').with({boundTestRun:testController});
@@ -147,4 +198,41 @@ When ('click add computer button', async function() {
 Then ('validation of computer name mandatory message validation', async function(){
     let validation_msg = Selector('span').with({boundTestRun: testController})
     await testController.expect(validation_msg.innerText).contains('Required');
+});
+
+Then ('validation of incorrect date format', async function(){
+    let date_filed = Selector('span').nth(1).with({boundTestRun: testController})
+    await testController.expect(date_filed.innerText).contains('Date');
+});
+
+When ('click add computer button1', async function() {
+
+    await testController
+    .pressKey("tab");
+    await testController
+    .wait(200);
+    await testController
+    .pressKey("tab");
+    await testController
+    .wait(200);
+    await testController
+    .pressKey("tab");
+    await testController
+    .wait(200);
+    await testController
+    .pressKey("enter");
+ 
+});
+
+When ('click add computer button2', async function() {
+
+    await testController
+    .pressKey("tab");
+    await testController
+    .wait(200);
+    await testController
+    .pressKey("tab");
+    await testController
+    .pressKey("enter");
+ 
 });
