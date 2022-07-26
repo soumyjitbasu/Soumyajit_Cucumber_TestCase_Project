@@ -25,7 +25,7 @@
 8. package.json - dependecies that are required to run this project
 
 
-# how to Run th Code
+# how to Run the Code
 1. Clone the repository in a local folder
 2. Open the folder in VSCode
 3. From VSCode > Terminal install the node modules using "npm install"
