@@ -43,7 +43,6 @@ Scenario: P1 Test Cases
     Then validation of computer name mandatory message validation
 
     # SCENARIO 7 - DATE FORMAT VALIDATION FOR Introduced and Dicsontinuted Date
-    
     And enter all special characters in computer name "No Other Fields"
     And enter Introduced Valid Date "2000-13-02"
     And click add computer button1
