@@ -1,5 +1,8 @@
 # Soumyajit_Cucumber_TestCase_Project
 
+# Understadning of the folder structure
+
+
 # how to Run th Code
 1. Clone the repository in a local folder
 2. Open the folder in VSCode
