@@ -50,7 +50,6 @@ Then ('no result should be retruned', async function(){
 });
 
 
-
 When ('user clicks add new computer button', async function() {
 
     let add = Selector('a#add').with({boundTestRun:testController});
