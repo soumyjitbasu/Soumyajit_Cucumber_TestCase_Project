@@ -1,17 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "Filter",
+    "name": "Test Scenarios",
     "line": 1,
-    "id": "filter",
+    "id": "test-scenarios",
     "tags": [],
     "uri": "features\\filter_by_name.feature",
     "elements": [
       {
-        "id": "filter;p1-test-cases",
+        "id": "test-scenarios;multiple-test-scenarios",
         "keyword": "Scenario",
         "line": 3,
-        "name": "P1 Test Cases",
+        "name": "Multiple Test Scenarios",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -19,202 +19,202 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "features\\support\\hooks.js:102"
+              "location": "features\\support\\hooks.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 9560000000
+              "duration": 10933000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "I open the website",
             "match": {
               "location": "features\\step_definitions\\filter_by_name_steps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 1458000000
+              "duration": 1541000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "I enter the computer name \"Acer Iconia\"",
+            "line": 8,
+            "name": "SCENARIO 1 - Valid Search - I enter the computer name \"Acer Iconia\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:10"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 769000000
+              "duration": 764000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
-            "name": "User clicks on filer by name button",
+            "line": 9,
+            "name": "SCENARIO 1 - Valid Search - User clicks on filer by name button",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:18"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 541000000
+              "duration": 536000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "one result is retuened with name Acer Iconia",
+            "line": 10,
+            "name": "SCENARIO 1 - Valid Search - one result is retuened with name Acer Iconia",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:26"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 90000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "enter an invalid computer name \"&*&*&*&\"",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 591000000
+              "duration": 112000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "user clicks search",
+            "name": "SCENARIO 2 - Invalid Search - enter an invalid computer name \"&*&*&*&\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:39"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 567000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "no result should be retruned",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 95000000
+              "duration": 595000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "user clicks add new computer button",
+            "line": 14,
+            "name": "SCENARIO 2 - Invalid Search - user clicks search",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:54"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 541000000
+              "duration": 534000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "SCENARIO 2 - Invalid Search - no result should be retruned",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "enter a computer name \"test_computer\"",
+            "name": "SCENARIO 3 - Computer Add - user clicks add new computer button",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:61"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 535000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "enter Introduced Date \"2000-06-02\"",
+            "name": "SCENARIO 3 - Computer Add - enter a computer name \"test_computer\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:67"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:64"
             },
             "result": {
               "status": "passed",
-              "duration": 685000000
+              "duration": 822000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "enter Discontinued Date \"2022-06-01\"",
+            "name": "SCENARIO 3 - Computer Add - enter Introduced Date \"2000-06-02\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:73"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:70"
             },
             "result": {
               "status": "passed",
-              "duration": 686000000
+              "duration": 708000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "choose company",
+            "name": "SCENARIO 3 - Computer Add - enter Discontinued Date \"2022-06-01\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:79"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:76"
             },
             "result": {
               "status": "passed",
-              "duration": 526000000
+              "duration": 691000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "create the computer",
+            "name": "SCENARIO 3 - Computer Add - choose company",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:87"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:82"
             },
             "result": {
               "status": "passed",
-              "duration": 2951000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "successful computer creation",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:98"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 105000000
+              "duration": 511000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
-            "name": "user clicks add new computer",
+            "line": 23,
+            "name": "SCENARIO 3 - Computer Add - create the computer",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:105"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2952000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "SCENARIO 3 - Computer Add - successful computer creation",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "SCENARIO 4 - Special Character in Computer Name - user clicks add new computer",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:108"
             },
             "result": {
               "status": "passed",
@@ -224,36 +224,36 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "enter all special characters in computer name \"!@#$%^\"",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:112"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 592000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 28,
-            "name": "enter Introduced Valid Date \"2000-06-02\"",
+            "name": "SCENARIO 4 - Special Character in Computer Name - enter all special characters in computer name \"!@#$%^\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:118"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:115"
             },
             "result": {
               "status": "passed",
-              "duration": 687000000
+              "duration": 614000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "enter Discontinued Valid Date \"2022-06-01\"",
+            "name": "SCENARIO 4 - Special Character in Computer Name - enter Introduced Valid Date \"2000-06-02\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:124"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 693000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "SCENARIO 4 - Special Character in Computer Name - enter Discontinued Valid Date \"2022-06-01\"",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:127"
             },
             "result": {
               "status": "passed",
@@ -263,127 +263,127 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 30,
-            "name": "choose valid company",
+            "line": 31,
+            "name": "SCENARIO 4 - Special Character in Computer Name - choose valid company",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:130"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:133"
             },
             "result": {
               "status": "passed",
-              "duration": 448000000
+              "duration": 519000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 31,
-            "name": "create the computer with blank name",
+            "line": 32,
+            "name": "SCENARIO 4 - Special Character in Computer Name - create the computer with blank name",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:138"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:141"
             },
             "result": {
               "status": "passed",
-              "duration": 2911000000
+              "duration": 2895000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
-            "name": "successful computer creation with blank name",
+            "line": 33,
+            "name": "SCENARIO 4 - Special Character in Computer Name - successful computer creation with blank name",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:149"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:153"
             },
             "result": {
               "status": "passed",
-              "duration": 93000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "user clicks add new computer",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:105"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 495000000
+              "duration": 122000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 36,
-            "name": "enter all special characters in computer name \"No Other Fields\"",
+            "name": "SCENARIO 5 - Negative Computer Add Scenario - user clicks add new computer",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:112"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:241"
             },
             "result": {
               "status": "passed",
-              "duration": 873000000
+              "duration": 539000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 37,
-            "name": "create the computer with blank name",
+            "name": "SCENARIO 5 - Negative Computer Add Scenario - No computer name \"No Other Fields\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:138"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:248"
             },
             "result": {
               "status": "passed",
-              "duration": 2948000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "successful computer creation with blank name",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:149"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 93000000
+              "duration": 897000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
-            "name": "go back to add computer page",
+            "line": 38,
+            "name": "SCENARIO 5 - Negative Computer Add Scenario - create computer",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:154"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:254"
             },
             "result": {
               "status": "passed",
-              "duration": 703000000
+              "duration": 2913000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "SCENARIO 5 - Negative Computer Add Scenario - successful computer creation with blank name",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:265"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 42,
-            "name": "click add computer button",
+            "name": "SCENARIO 6 - Computer Mandatory Field Validation - go back to add computer page",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:161"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:160"
             },
             "result": {
               "status": "passed",
-              "duration": 3227000000
+              "duration": 946000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "SCENARIO 6 - click add computer button",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:167"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3189000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 43,
-            "name": "validation of computer name mandatory message validation",
+            "line": 44,
+            "name": "SCENARIO 6 - validation of computer name mandatory message validation",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:193"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:199"
             },
             "result": {
               "status": "passed",
@@ -393,62 +393,23 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 46,
-            "name": "enter all special characters in computer name \"Soumyajit Computer\"",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:112"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 940000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 47,
-            "name": "enter Introduced Valid Date \"2000-13-02\"",
+            "name": "SCENARIO 7 - DATE FORMAT VALIDATION \"Soumyajit Computer\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:118"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:270"
             },
             "result": {
               "status": "passed",
-              "duration": 695000000
+              "duration": 932000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 48,
-            "name": "click add computer button1",
+            "name": "SCENARIO 7 - DATE FORMAT VALIDATION enter Introduced Valid Date \"2000-13-02\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:203"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1741000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 49,
-            "name": "validation of incorrect date format",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:198"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 99000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "enter Introduced Valid Date \"2000-12-02\"",
-            "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:118"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:276"
             },
             "result": {
               "status": "passed",
@@ -458,47 +419,86 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
-            "name": "enter Discontinued Valid Date \"2022-13-01\"",
+            "line": 49,
+            "name": "SCENARIO 7 - click add computer button1",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:124"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:209"
             },
             "result": {
               "status": "passed",
-              "duration": 685000000
+              "duration": 1753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "validation of incorrect date format",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:204"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "SCENARIO 7 - DATE FORMAT VALIDATION enter Introduced Valid Date \"2000-12-02\"",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:276"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 52,
-            "name": "click add computer button2",
+            "name": "SCENARIO 7 - DATE FORMAT VALIDATION Discontinued Valid Date \"2022-13-01\"",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:222"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:282"
             },
             "result": {
               "status": "passed",
-              "duration": 1140000000
+              "duration": 678000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "SCENARIO 7 - click add computer button2",
+            "match": {
+              "location": "features\\step_definitions\\filter_by_name_steps.js:228"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1088000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 53,
+            "line": 54,
             "name": "validation of incorrect date format",
             "match": {
-              "location": "features\\step_definitions\\filter_by_name_steps.js:198"
+              "location": "features\\step_definitions\\filter_by_name_steps.js:204"
             },
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 99000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "features\\support\\hooks.js:120"
+              "location": "features\\support\\hooks.js:54"
             },
             "result": {
               "status": "passed",
