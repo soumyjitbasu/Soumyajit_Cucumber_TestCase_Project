@@ -1,6 +1,6 @@
-Feature: Test Scenarios
+Feature: Test Plan
 
-    Scenario: Multiple Test Scenarios
+    Scenario: Bucket of Test Scenarios [Grouped together in one place]
         #comment Soumyajit Test
         Given I open the website
 
