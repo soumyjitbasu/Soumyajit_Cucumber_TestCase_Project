@@ -8,7 +8,7 @@
     "cucumber": "^5.1.0",
     "cucumber-html-reporter": "^5.5.0",
     "npm": "^8.15.0",
-    "testcafe": "^1.1.0"
+    "testcafe": "^1.20.0"
   },
   "main": "index.js",
   "devDependencies": {},
