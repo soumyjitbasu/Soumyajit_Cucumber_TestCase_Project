@@ -43,7 +43,7 @@ Feature: Filter
         Then validation of computer name mandatory message validation
 
         # SCENARIO 7 - NEGATIVE SCENARIO - DATE FORMAT VALIDATION FOR Introduced and Dicsontinuted Date
-        And enter all special characters in computer name "No Other Fields"
+        And enter all special characters in computer name "Soumyajit Computer"
         And enter Introduced Valid Date "2000-13-02"
         And click add computer button1
         Then validation of incorrect date format
