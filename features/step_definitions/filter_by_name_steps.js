@@ -284,3 +284,9 @@ When ('SCENARIO 7 - DATE FORMAT VALIDATION Discontinued Valid Date {string}', as
     await testController
     .typeText(disc_date, discontinued_date)
 });
+
+When ('SCENARIO 7 - DATE FORMAT VALIDATION enter Introduced invalid Date {string}', async function(introduced_date){
+    let intro_date = Selector('input#introduced').with({boundTestRun: testController});
+    await testController
+    .typeText(intro_date, introduced_date, {replace: true})
+});

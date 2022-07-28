@@ -50,7 +50,7 @@ Feature: Test Plan
         And SCENARIO 7 - DATE FORMAT VALIDATION enter Introduced Valid Date "2000-13-02"
         And SCENARIO 7 - click add computer button1
         Then validation of incorrect date format
-        And SCENARIO 7 - DATE FORMAT VALIDATION enter Introduced Valid Date "2000-12-02"
+        And SCENARIO 7 - DATE FORMAT VALIDATION enter Introduced invalid Date "2000-12-02"
         And SCENARIO 7 - DATE FORMAT VALIDATION Discontinued Valid Date "2022-13-01"
         And SCENARIO 7 - click add computer button2
         Then validation of incorrect date format
